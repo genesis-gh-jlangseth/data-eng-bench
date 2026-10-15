@@ -35,6 +35,12 @@
       "display_url": "https://cursor.com/docs/cli/overview",
       "display_org": "Cursor",
       "org_url": "https://cursor.com"
+    },
+    "coco-genesis-prover": {
+      "display_name": "CoCo + Genesis Prover",
+      "display_url": "https://genesiscomputing.ai",
+      "display_org": "Genesis Computing",
+      "org_url": "https://genesiscomputing.ai"
     }
   },
   "models": {
@@ -121,6 +127,12 @@
       "display_url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
       "display_org": "OpenAI",
       "org_url": "https://openai.com"
+    },
+    "claude-opus-5": {
+      "display_name": "Opus 5",
+      "display_url": "https://www.anthropic.com/claude",
+      "display_org": "Anthropic",
+      "org_url": "https://www.anthropic.com"
     }
   }
 }
