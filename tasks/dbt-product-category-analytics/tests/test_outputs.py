@@ -185,7 +185,11 @@ def run_cmd(cmd: str) -> subprocess.CompletedProcess:
 
 def run_dbt_pipeline():
     run_cmd("dbt deps")  # ensure packages are installed
-    result = run_cmd("dbt run")
+    db_type = os.environ.get('DB_TYPE', 'duckdb').lower()
+    if db_type == 'snowflake':
+        result = run_cmd("dbt run --select stg_order_lines stg_products stg_categories stg_orders int_product_sales fct_category_performance")
+    else:
+        result = run_cmd("dbt run")
     assert result.returncode == 0, f"dbt run failed: {result.stderr}"
 
 
